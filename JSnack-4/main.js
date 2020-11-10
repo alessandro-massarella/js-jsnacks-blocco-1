@@ -17,15 +17,15 @@ teams = [];
 
 for (var i = 0; i < 4; i++) {
   var squadra = {
-    nome : '',
+    nome : prompt('inserisci squadra'),
     puntiFatti : Math.floor(Math.random() * 101),
     falliSubiti : Math.floor(Math.random() * 11)
   }
 
+  teams.push(squadra);
+
   console.log(squadra.puntiFatti);
   console.log(squadra.falliSubiti);
-  squadra.nome = prompt('inserisci squadra');
-  teams.push(squadra.nome);
 
 }
 
